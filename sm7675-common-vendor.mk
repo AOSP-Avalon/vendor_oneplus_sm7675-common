@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/PanelChaplin/AA584_P_7_A0001_dsc_cmd_mode_panel_Vivid_pGC.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/AA584_P_7_A0001_dsc_cmd_mode_panel_Vivid_pGC.txt \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/PanelChaplin/AdjustValue:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/AdjustValue \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/PanelChaplin/panelchaplin:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/panelchaplin \
+    vendor/oneplus/sm7675-common/proprietary/odm/etc/QtiFtmPublicKey.pem:$(TARGET_COPY_OUT_ODM)/etc/QtiFtmPublicKey.pem \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/apdr.conf:$(TARGET_COPY_OUT_ODM)/etc/apdr.conf \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/camera/AiFace.json:$(TARGET_COPY_OUT_ODM)/etc/camera/AiFace.json \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/camera/CameraOemConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraOemConfiguration.config \
@@ -415,7 +416,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/camera/libiceainr_model.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/libiceainr_model.dlc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/camera/main_inv_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/main_inv_mapxy_33x25.bin \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/camera/main_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/main_mapxy_33x25.bin \
-    vendor/oneplus/sm7675-common/proprietary/odm/etc/camera/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/media_profiles.xml \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/camera/meishe_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/ByYo3If \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/camera/meishe_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Cold.cube.rgb.bin \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/camera/meishe_lut/DL_A_MoneyBall.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/DL_A_MoneyBall.bin \
@@ -804,10 +804,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/displaycolorfeaturecfg.xml:$(TARGET_COPY_OUT_ODM)/etc/displaycolorfeaturecfg.xml \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/commcenterd.rc:$(TARGET_COPY_OUT_ODM)/etc/init/commcenterd.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
+    vendor/oneplus/sm7675-common/proprietary/odm/etc/init/hw/init.oplus.wifi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.wifi.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/init.oplus.sensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oplus.sensor.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/init.oppo.reserve.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oppo.reserve.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
-    vendor/oneplus/sm7675-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
+    vendor/oneplus/sm7675-common/proprietary/odm/etc/init/subsys_daemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/subsys_daemon.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc \
@@ -815,7 +816,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V6-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V6-service.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
-    vendor/oneplus/sm7675-common/proprietary/odm/etc/init/vendor.oplus.hardware.urcc-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.urcc-service.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/init/vendor.qti.qegahal-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.qegahal-service.rc \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
@@ -824,6 +824,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/p_7_a0001_colorful_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/p_7_a0001_colorful_eyeprotect_data.xml \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/p_7_a0001_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/p_7_a0001_eyeprotect_data.xml \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/p_7_a0001_srgb_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/p_7_a0001_srgb_eyeprotect_data.xml \
+    vendor/oneplus/sm7675-common/proprietary/odm/etc/plugin_config.xml:$(TARGET_COPY_OUT_ODM)/etc/plugin_config.xml \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/samsung1024_s6e3hc3_cinema_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/samsung1024_s6e3hc3_cinema_eyeprotect_data.xml \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/samsung1024_s6e3hc3_colorful_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/samsung1024_s6e3hc3_colorful_eyeprotect_data.xml \
     vendor/oneplus/sm7675-common/proprietary/odm/etc/samsung1024_s6e3hc3_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/samsung1024_s6e3hc3_eyeprotect_data.xml \
@@ -878,6 +879,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/oneplus/sm7675-common/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/oneplus/sm7675-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
+    vendor/oneplus/sm7675-common/proprietary/system/etc/permissions/uimremoteclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteclient.xml \
+    vendor/oneplus/sm7675-common/proprietary/system/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteserver.xml \
     vendor/oneplus/sm7675-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/sm7675-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/oneplus/sm7675-common/proprietary/system_ext/etc/horae/horae.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae.conf \
@@ -1065,6 +1068,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
+    vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
@@ -1122,6 +1126,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
+    vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/vendor.qti.smp2p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.smp2p.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
@@ -1172,6 +1177,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/media_pineapple/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_pineapple/video_system_specs.json \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/media_profiles_cliffs_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_cliffs_v0.xml \
+    vendor/oneplus/sm7675-common/proprietary/vendor/etc/media_profiles_cliffs_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_cliffs_v1.xml \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/media_profiles_pineapple.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_pineapple.xml \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/mem_logger_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mem_logger_config.xml \
     vendor/oneplus/sm7675-common/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
@@ -1615,9 +1621,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7675-common/proprietary/vendor/lib64/libpnc_cl_program.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libpnc_cl_program.bin
 
 PRODUCT_PACKAGES += \
-    libostatslog \
-    vendor.oplus.hardware.displaypanelfeature-V1-ndk \
-    vendor.oplus.hardware.performance-V1-ndk \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128c2csli_imx766 \
@@ -2102,6 +2105,7 @@ PRODUCT_PACKAGES += \
     libopestriping \
     libops \
     libos \
+    libosensenativeproxy_client_vendor \
     libpal_net_if \
     libpasrutils \
     libpdmapper \
@@ -2424,6 +2428,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk_vendor \
     vendor.oplus.hardware.ims-V1-ndk \
+    vendor.oplus.hardware.olc2-V2-ndk_vendor \
     vendor.oplus.hardware.stability.oplus_project-V1-ndk \
     vendor.pixelworks.hardware.display-V2-ndk \
     vendor.pixelworks.hardware.display@1.0_vendor \
@@ -2481,6 +2486,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.factory@1.0 \
     vendor.qti.hardware.factory@1.1 \
     vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.hexlp-V1-ndk \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.limits@1.0 \
@@ -2622,6 +2628,7 @@ PRODUCT_PACKAGES += \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
+    libostatslog \
     libqcc \
     libqcc_file_agent_sys \
     libqccdme \
@@ -2643,10 +2650,8 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
-    vendor.oplus.hardware.charger-V1-ndk \
+    vendor.oplus.hardware.displaypanelfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature@1.0 \
-    vendor.oplus.hardware.urcc-V1-ndk \
-    vendor.oplus.hardware.urcc-V1-ndk_platform \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
@@ -2796,6 +2801,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_ultra_high_dynamic_range \
     libarcsoft_videoautozoom \
     libc++_shared \
+    libc2filterplugin \
     libcalculator \
     libcalculator_htp \
     libcommcenterfw \
@@ -2841,6 +2847,10 @@ PRODUCT_PACKAGES += \
     libpwirisfeature \
     libpwirishalwrapper \
     libqsh.utils \
+    libqti-radio-service \
+    libqti-subsys-service \
+    libradio-service \
+    libradioapis \
     libremosaic_wrapper \
     librfapis \
     libroi \
@@ -2853,12 +2863,13 @@ PRODUCT_PACKAGES += \
     libsnpe_loader \
     libstface_fd_api \
     libstfd_mobile_api \
+    libsubsys-service \
+    libsubsys-utils \
     libtensorflowlite_oplus \
     libtfavib \
     libthirdcapability \
     libtrace \
     libuahcore \
-    liburcccore \
     libvega_common \
     libvega_face \
     libwatermark_photo \
@@ -2870,21 +2881,18 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.camera_rfi-V1-ndk \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
-    vendor.oplus.hardware.charger-V6-ndk \
-    vendor.oplus.hardware.charger@1.0 \
     vendor.oplus.hardware.communicationcenter-V1-ndk \
     vendor.oplus.hardware.communicationcenter-V2-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm \
     vendor.oplus.hardware.olc2-V1-ndk \
     vendor.oplus.hardware.olc2-V2-ndk \
-    vendor.oplus.hardware.performance-V1-ndk_odm \
-    vendor.oplus.hardware.performance-V2-ndk \
-    vendor.oplus.hardware.performance-V3-ndk \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     vendor.oplus.hardware.stability.oplus_project-V2-ndk \
-    vendor.oplus.hardware.urcc-V1-ndk_odm \
+    vendor.oplus.hardware.subsys-V3-ndk \
+    vendor.oplus.hardware.subsys_radio-V4-ndk \
+    vendor.oplus.hardware.urcc-V1-ndk \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
     vendor.pixelworks.hardware.display@1.2 \
@@ -2944,9 +2952,6 @@ PRODUCT_PACKAGES += \
     oplus-ims-ext \
     qcrilhook \
     rsmcService \
-    vendor.oplus.hardware.charger-V1-java \
-    vendor.oplus.hardware.charger-V1.0-java \
-    vendor.oplus.hardware.charger-V6-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V1-java \
@@ -2992,6 +2997,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm.xml \
     vendor.qti.hardware.embmssl.xml \
     vendor.qti.hardware.factory.ifactory.xml \
+    vendor.qti.hardware.hexlp-service.xml \
     vendor.qti.hardware.limits-service.xml \
     vendor.qti.hardware.perf2.xml \
     vendor.qti.hardware.power.powermodule.xml \
@@ -3019,9 +3025,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_ifaa.xml \
     manifest_oplus_sendextcamcmd.xml \
     manifest_oplus_stability_project_aidl.xml \
-    manifest_performance_aidl.xml \
     manifest_touch_aidl.xml \
-    vendor.oplus.hardware.urcc-service.xml \
     vendor.qti.qegahal-service.xml \
     ATFWD-daemon \
     adpl \
@@ -3040,6 +3044,7 @@ PRODUCT_PACKAGES += \
     feature_enabler_client \
     hdcp1prov \
     hdcp2p2prov \
+    hexlpservice \
     android.hardware.bluetooth@1.1-service-qti \
     android.hardware.gatekeeper-service-qti \
     android.hardware.gnss-aidl-service-qti \
@@ -3156,7 +3161,7 @@ PRODUCT_PACKAGES += \
     cwb_utils_aidl \
     displaycolorfeature_test \
     displaypanelfeatureTest \
-    vendor-oplus-hardware-performance-V1-service \
+    subsys_daemon \
     vendor-oplus-hardware-touch-V2-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service \
@@ -3164,13 +3169,14 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.charger-V6-service \
     vendor.oplus.hardware.displaypanelfeature-service \
     vendor.oplus.hardware.stability.oplus_project-V1-service \
-    vendor.oplus.hardware.urcc-service \
     wlschgd \
+    init.oplus.wifi \
+    init.subsys \
     oldc_vnd \
     oplus_sensor_fb \
     oplus_sensor_ssr \
     touchDaemon \
-    touchHidlTest \
+    vendor.autochmod \
     vendor.qti.qegahal-service \
     wifi_diag \
     wififtm \
