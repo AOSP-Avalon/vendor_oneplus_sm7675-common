@@ -3028,12 +3028,17 @@ PRODUCT_PACKAGES += \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \
+    init.crda \
     init.kernel.post_boot-cliffs \
     init.kernel.post_boot-cliffs_2_2_1 \
     init.kernel.post_boot-cliffs_2_3_0 \
     init.kernel.post_boot-cliffs_3_3_1 \
     init.kernel.post_boot-memory \
+    init.mdm \
     init.qcom.class_core \
+    init.qcom.coex \
+    init.qcom.efs.sync \
+    init.qcom.sdio \
     init.qcom.sensors \
     init.qti.graphics \
     init.qti.kernel \
